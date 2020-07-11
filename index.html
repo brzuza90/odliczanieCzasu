@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odliczanie czasu</title>
     <style>
-        body {
-            margin: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
+      body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
 
+      h1 {
+        font-size: 80px;
+      }
+
+      div.time {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: monospace;
+        font-size: 70px;
+        font-weight: bold;
+      }
+
+      h2 {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        width: 90%;
+        transform: translateX(-50%);
+        font-size: 40px;
+      }
+      @media (max-width: 812px) {
         h1 {
-            font-size: 80px;
+          font-size: 40px;
         }
-
         div.time {
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: monospace;
-            font-size: 70px;
-            font-weight: bold;
+          font-size: 50px;
         }
-
         h2 {
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 40px;
+          font-size: 30px;
         }
+      }
+      @media (max-width: 414px) {
+        h1 {
+          font-size: 50px;
+        }
+        div.time {
+          font-size: 60px;
+        }
+        h2 {
+          font-size: 40px;
+        }
+      }
+      @media (max-width: 359px) {
+        h1 {
+          font-size: 40px;
+        }
+        div.time {
+          font-size: 50px;
+        }
+        h2 {
+          font-size: 28px;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Pieluś masz jeszcze</h1>
     <div class="time">
-        <span class="days">.</span>
-        <span class="hours">.</span>
-        <span class="minutes">.</span>
-        <span class="seconds">.</span>
+      <span class="days">.</span>
+      <span class="hours">.</span>
+      <span class="minutes">.</span>
+      <span class="seconds">.</span>
     </div>
     <h2>na przemyślenie swojej decyzji :)</h2>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
